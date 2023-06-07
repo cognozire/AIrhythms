@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pretty_midi
-from io import BytesIO
-import base64
+
 import random
 st.title('Welcome to AI Music Player')
 
