@@ -64,7 +64,7 @@ def run():
         mp3_files = ["21.mp3", "22.mp3", "23.mp3","24.mp3","25.mp3"]
 
 # Generate a random number
-        random_number = random.randint(1, 10)
+        random_number = random.randint(1, 5)
 
 # Select the corresponding MP3 file
         selected_mp3 = mp3_files[random_number - 1]
