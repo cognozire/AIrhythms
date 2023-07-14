@@ -76,11 +76,11 @@ def run():
 
 
     st.write('You selected:', option)
-    with open(audio_file, "rb") as file:
-       audio_data = file.read()
+    # with open(audio_file, "rb") as file:
+    #    audio_data = file.read()
 
     # st.download_button("Download Audio", audio_data, mime="audio/mp3")
-    with open(audio_data, "rb") as file:
+    with open(audio_file, "rb") as file:
        btn = st.download_button(
                label="Download Audio",
                data=file,
