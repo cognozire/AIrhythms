@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from io import BytesIO
-from pydub import AudioSegment
 import random
 
 st.title('Welcome to AI Music Player')
@@ -78,9 +76,9 @@ def run():
 
 
     st.write('You selected:', option)
-    bio = BytesIO()
-    bio.write(audio_file)
-    bio.seek(0)
-    st.download_button('Download Audio File', audio_file, file_download=audio_file.read())
+    with open(audio_file, "rb") as file:
+       audio_data = file.read()
+
+    st.download_button("Download Audio", "audio.mp3", data=audio_data)
 
 run()
