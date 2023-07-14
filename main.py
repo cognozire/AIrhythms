@@ -79,6 +79,6 @@ def run():
     with open(audio_file, "rb") as file:
        audio_data = file.read()
 
-    st.download_button("Download Audio", "audio.mp3", data=audio_data)
+    st.download_button("Download Audio", audio_data)
 
 run()
