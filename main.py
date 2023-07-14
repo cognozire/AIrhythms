@@ -75,6 +75,7 @@ def run():
         audio_file = a
 
         st.audio(audio_file, format='audio/mp3')
+        st.download_button('Download Audio File', audio_file)
 
 
 
